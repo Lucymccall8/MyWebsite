@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <!-- link for fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <button onclick="scrollToTop()" id="myBtn" class="scrollBtn" title="Go to top">Top</i></button>
+
+      <!-- The nav bar -->
+      <div id="navbar">
+        <div class="nav-container">
+          <a href="#Projects">PROJECTS</a>
+          <a href="#About">ABOUT</a>
+        </div>
+      </div> 
+
+
+        <!-- The top gradient div-->
+        <div class="home-container">
+          <div class="center-div">
+              <h1>Lucy McCall</h1>
+              <hr class="solid" style="background-color: white; width: 300px;">
+              <p>Full stack developer</p>
+              <span class="icon-container">
+                  <a href="https://github.com/Lucymccall8" title="GitHub" add target="_blank"><i class="fab fa-github-square" style="padding-right: 20px;"></i></a>
+                  <a href="https://twitter.com/LucyMccall1999" title="Twitter" add target="_blank"><i class="fab fa-twitter-square"></i></a>
+                  <a href="https://www.linkedin.com/in/lucy-mccall-06316b154/" title="LinkedIn" add target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="padding-left: 20px;"></i></a>
+              </span>
+          </div>
+        </div>
+
+
+
+        <!-- projects section -->
+        <div class="project-container">
+
+          <!-- projects title container -->
+          <div class="project-title">
+            <a name="Projects"></a>
+            <h1>PROJECTS</h1>
+            <hr class="solid" style="background-color: black; width: 300px; height: 1px;">
+          </div>
+          
+          
+          <!-- the container for project cards -->
+          <div class="row">
+            
+            <!-- Project 1 card -->
+            <div class="card" style="width: 23rem;">
+              <img src="images/flutter-logo.png" class="card-img-top" alt="Flutter">
+              <div class="card-body">
+                <h5 class="card-title">PsyCube Application</h5>
+                <p class="card-text">An Artificial Intelligence therapy solution, for managing your mental health. 
+                  An application written in Dart-Flutter.</p>
+                <a href="https://github.com/Leeds-Beckett-Therapy-Bot-Group/psycube-flutter-application" target="_blank" class="btn btn-primary outline">GitHub</a>
+              </div>
+            </div>
+
+            <!-- Project 2 card -->
+            <div class="card" style="width: 23rem;">
+              <img src="images/android-logo.png" class="card-img-top" alt="Android">
+              <div class="card-body">
+                <h5 class="card-title">ToDo Application</h5>
+                <p class="card-text">A simple application that is created for managing all of your daily ToDos,
+                   written in Android Java. </p>
+                <a href="https://github.com/Lucymccall8/TodoApplication/tree/master" target="_blank" class="btn btn-primary outline">GitHub</a>
+              </div>
+            </div>
+
+            <!-- Project 3 card -->
+            <div class="card" style="width: 23rem;">
+              <img src="images/python-logo.png" class="card-img-top" alt="Python">
+              <div class="card-body">
+                <h5 class="card-title">Python Flask Application</h5>
+                <p class="card-text">A CCTV - facial recognition application written with Pythons Flask framework 
+                  written in collabaration with yorkshire police.</p>
+                <a href="https://github.com/Lucymccall8/MotionDetectCam" target="_blank" class="btn btn-primary outline">GitHub</a>
+              </div>
+            </div>
+          
+            <!-- end of row for the cards -->
+          </div>
+          
+          <!-- The button for more projects -->
+          <div class="project-btn-container">
+            <a href="https://github.com/Lucymccall8?tab=repositories" add target="_blank"><button class="project-btn">MORE</button></a>
+          </div>
+
+          <!-- end of projects section -->
+        </div>
+
+        
+
+
+
+
+
+
+        <div class="about-container">
+          <div class="about-title">
+            <a name="About"></a>
+            <h1>ABOUT ME</h1>
+            <hr class="solid" style="background-color: white; width: 300px; height: 1px;">
+        </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="card card-body">
+                  <h5 class="card-title">Leeds Beckett University:  2017 - Current</h5>
+                        <p class="card-text">Integrated Masters degree</p>
+                        <h5 class="card-title">Skills</h5>
+                        <p class="card-text"> - Java<br> - Android Studio<br> - HTML<br> - CSS <br> - Flutter-Dart<br> - Python</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="card card-body">
+                  <h5 class="card-title">I am a third year computer science Integrated Masters student at Leeds Beckett University,
+                     currently on track for a distinction. I'm currently the president of LBU Computer Science Society, and my hobbies are programming,
+                    playing the saxophone and reading.</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card card-body">
+                  <h5 class="card-title">Contact information</h5>
+                  <div class="contact-container">
+                    <p class="card-text">contact@lucymccall.com</p>
+                    <p class="card-text">07954052087</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space">
+          </div>
+        </div>
+
+
+        <!-- javascript snippets -->
+        <script>
+            window.onscroll = function() {navBar()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function navBar() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+            <!-- <script>
+              //Get the button:
+              mybutton = document.getElementById("myBtn");
+              
+              // When the user scrolls down 20px from the top of the document, show the button
+              window.onscroll = function() {scrollFunction()};
+              
+              function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                    }
+                  }
+                  
+              // When the user clicks on the button, scroll to the top of the document
+              function scrollToTop() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+              } 
+            </script> -->
+
+        <script src="https://kit.fontawesome.com/63d6ef8b09.js" crossorigin="anonymous"></script>
+    </body>
+</html>
