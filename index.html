@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Lucy McCall</title>
+</head>
+
+<body>
+
+    <!-- ---------------------------- burger menu ---------------------------- -->
+    <div class="burger-menu" id="burger-menu">
+        <ul>
+            <li class="nav-title primary-link"><a href="/">Lucy McCall</a></li>
+            <li class="secondary-link"><a href="#projects">Projects</a></li>
+            <li class="secondary-link"><a href="#aboutme">About Me</a></li>
+        </ul>
+    </div>
+
+
+
+    <div id="website-content" class="website-content">
+
+        <div class="website-cover" id="website-cover"></div>
+        <!-- ------------------------------- nav bar ------------------------------- -->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="nav-title"><a href="/">Lucy McCall</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+            </ul>
+            <div class="burger-button">
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+        <!-- -------------------------- hero-image section -------------------------- -->
+        <section>
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1 id="hero-title">Hi, my name is Lucy</h1>
+                    <h2 id="hero-subtitle">I'm a full stack developer</h2>
+                </div>
+                <a href="#projects">
+                    <div id="arrow-button" class="scroll">
+                        <div class="scroll-text">Scroll Down</div>
+                        <div class="scroll-arrow">
+                            <div></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- -------------------------- projects section --------------------------- -->
+
+        <section id="projects" class="projects">
+            <div class="cards">
+                <div class="card-container">
+                    <!-- <div class="col"> -->
+                    <!-- card 1 -->
+                    <div class="card title-card">
+                        <div class="card-content">
+                            <h6>My projects</h6>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <a href="https://pokedex.lucymccall.com" target="_blank">
+                        <div class="card project-card">
+                            <div class="card-img">
+
+                                <img src="/assets/project1-2.png">
+                            </div>
+                            <div class="card-content">
+                                <h6 class="title">POKEDEX</h6>
+                                <p class="subtitle">A pokedex site made with html, sass, vanilla js and the official
+                                    pokeapi.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card 3 -->
+                    <div class="card contrast-card">
+                        <div class="card-content">
+                            <h6 class="title">The Malawi Project</h6>
+                            <p class="subtitle">Currently involved with Leeds Beckett Malawi Project, developing
+                                a mobile application to help people in vulnerable areas find safe drinking water.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- card 4  -->
+                    <div class="card project-card margin">
+                        <div class="card-img">
+                            <img src="/assets/malawi-api-2.png">
+                        </div>
+                        <div class="card-content">
+                            <h6 class="title">Malawi API</h6>
+                            <p class="subtitle">An authentication and management API for the Malawi Project, written in
+                                Python using SQLAlchemy.</p>
+                        </div>
+                    </div>
+                    <!-- card 5  -->
+                    <div class="card project-card">
+                        <div class="card-img">
+                            <img src="/assets/malawi-website-2.png">
+                        </div>
+                        <div class="card-content">
+                            <h6 class="title">Malawi Website</h6>
+                            <p class="subtitle">A backend admin website for the Malawi project, written using React.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="card accent-card">
+                        <div class="card-content">
+                            <h6>SEE MORE</h6>
+                            <p>Find more of my work on github</p>
+                            <button onclick="location.href='https://github.com/Lucymccall8'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------- about me section --------------------------- -->
+        <section id="aboutme" class="aboutme">
+            <div class="aboutme-title"><text>About Me</text></div>
+            <div class="aboutme-description">
+                <text>
+                    Hi, I'm Lucy! I've just graduated university with a distinction in a Computer Science Masters
+                    Degree. I'm a full stack developer and my main interests are Mobile Development, Python,
+                    and JavaScript. I especially enjoy using Flutter to create useful apps, and creating API's in
+                    Python. Recently, I started volunteering for the Malawi project, which
+                    is an open source project to develop a mobile application to help locals in Malawi find safe water
+                    for drinking and washing. I am the lead developer for this project, and am hoping it helps reduce
+                    disease in vulnerable areas.
+                    Outside of programming, I spend my spare time rollerskating, reading, and playing my saxophone :)
+                </text>
+            </div>
+            <div class="aboutme-contact">
+                <h1>Get in touch</h1>
+                <div class="aboutme-mobilenumber"><text>07954052087</text></div>
+                <div class="aboutme-emailaddress"><text>contact@lucymccall.com</text></div>
+
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/63d6ef8b09.js" crossorigin="anonymous"></script>
+    <script src="/js/nav.js"></script>
+</body>
+
+</html>

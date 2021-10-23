@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@import "../scss/variables";
+
+
+nav {
+    padding-left: 105px;
+    position: fixed;
+    // display: none;
+    z-index: 100;
+    color: $lightshade;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+
+    @media (max-width: 870px) {
+        padding-left: 20px;
+    }
+
+    ul {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        font-size: 18px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 70px;
+
+        &:first-of-type {
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 870px) {
+
+            &:nth-of-type(2),
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                display: none;
+            }
+
+        }
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $lightshade;
+        padding: 10px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.navbar.hidden {
+    transform: translateY(100%);
+}
+
+/* ------------------------- burger button ------------------------- */
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+    background-color: $lightshade;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+    background-color: $lightshade;
+}
+
+.burger-button {
+    transition: all 0.3s;
+    height: 100%;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    top: 0px;
+
+    @media (min-width: 870px) {
+        display: none;
+    }
+}
+
+/* ------------------------------- burger menu ------------------------------ */
+.burger-menu {
+    background-color: $maincolor;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+    transition: transform 0.3s;
+    transform: translateX(300px);
+
+    ul {
+        width: 100%;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        padding-left: 20px;
+        margin-left: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $lightshade;
+    }
+
+    .primary-link {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 0 16px 0;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .secondary-link {
+        padding: 20px;
+        background-color: #40c0b5;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.068);
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* --------------------------- website transitions --------------------------- */
+
+.website-cover {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-color: #3a6e768e;
+    cursor: pointer;
+}
+
+.website-content {
+    transition: all 0.3s;
+    position: relative;
+    left: 0;
+}

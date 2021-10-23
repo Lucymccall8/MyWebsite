@@ -1,0 +1,29 @@
+@import "../scss/variables";
+
+.aboutme {
+    // min-height: 100vh;
+    color: $darkshade;
+}
+
+.aboutme-title {
+    text-align: center;
+    padding-top: 30px;
+
+    text {
+        font-size: 5vh;
+    }
+}
+
+.aboutme-description {
+    text-align: center;
+    padding: 40px;
+}
+
+.aboutme-contact {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+button {
+    cursor: pointer;
+}
